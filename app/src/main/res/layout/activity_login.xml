@@ -1,0 +1,186 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp"
+    android:background="@drawable/background_color"
+    >
+
+    <LinearLayout
+        android:id="@+id/login_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+
+        <!-- Place holder for application logo  -->
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="82dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/main_logo"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            android:tint="@color/maroon"
+            />
+
+        <!-- Place holder for application title  -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/suez_one"
+            android:gravity="center"
+            android:padding="3dp"
+            android:textColor="@color/login_color"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:text="@string/application_name"/>
+
+        <!-- Email field  -->
+        <EditText
+            android:id="@+id/email_field"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/login_color"
+            android:textColorHint="@color/login_color"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/username_view"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/view_color_grey" />
+
+        <!-- Password Field  -->
+        <EditText
+            android:id="@+id/password_field"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/login_color"
+            android:textColorHint="@color/login_color"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/view_color_grey" />
+
+        <!-- Login Button  -->
+        <Button
+            android:id="@+id/loginBtn"
+            android:background="@drawable/login_button_style"
+            android:layout_width="300dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/login"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+
+        <!-- Forgot password text view  -->
+        <TextView
+            android:id="@+id/forgotPassTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/forgot_password"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <!-- Or Sign in text view  -->
+        <TextView
+            android:id="@+id/otherSignInTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/other_sign_in"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <!-- This layout contains google and facebook buttons -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            >
+            <!-- Place holder for google button  -->
+            <ImageButton
+                android:id="@+id/googleBtn"
+                android:layout_width="66dp"
+                android:layout_height="48dp"
+                android:src="@drawable/google_plus_icon"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+               android:tint="#c6533a"
+            />
+
+            <!-- Place holder for facebook button  -->
+            <ImageButton
+                android:id="@+id/facebookBtn"
+                android:layout_width="66dp"
+                android:layout_height="48dp"
+                android:src="@drawable/facebook_icon"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                android:tint="#405996"
+                />
+        </LinearLayout>
+
+        <!-- Do not have an account text view -->
+        <TextView
+            android:id="@+id/registerAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+
+            android:text="@string/no_account"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <!-- Place holder for register button  -->
+        <Button
+            android:id="@+id/registerBtn"
+            android:background="@drawable/register_button_style"
+            android:layout_width="150dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/register_button"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

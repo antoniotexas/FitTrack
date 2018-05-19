@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="icons">
+        <item>@drawable/bench_press_icon</item>
+        <item>@drawable/shoulder_press_icon</item>
+        <item>@drawable/deadlifts_icon</item>
+        <item>@drawable/dumbbell_icon</item>
+        <item>@drawable/pulldowns_icon</item>
+        <item>@drawable/situps_icon</item>
+        <item>@drawable/jumping_jacks_icon</item>
+        <item>@drawable/jumping_rope_icon</item>
+        <item>@drawable/running_icon</item>
+        <item>@drawable/walking_icon</item>
+        <item>@drawable/step_ups_icon</item>
+        <item>@drawable/curls_icon</item>
+
+    </array>
+    <array name="exercises">
+        <item>"Bench Press"</item>
+        <item>"Shoulder Press"</item>
+        <item>"Deadlifts"</item>
+        <item>"Flys"</item>
+        <item>"Pulldowns"</item>
+        <item>"Situps"</item>
+        <item>"Jumping Jack"</item>
+        <item>"Jump Rope"</item>
+        <item>"Running"</item>
+        <item>"Walking"</item>
+        <item>"Step ups"</item>
+        <item>"Curls"</item>
+
+    </array>
+
+</resources>

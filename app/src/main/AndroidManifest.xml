@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="edu.tamu.geoinnovation.fpx">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="false"
+        android:theme="@style/FitnessRPGThemeMain"
+        tools:replace="android:icon,android:theme,android:supportsRtl">
+        <activity
+            android:name=".activities.auth.LoginActivity"
+            android:theme="@style/FitnessRPGThemeLogin">
+
+            <!--
+           <intent-filter>
+               <action android:name="android.intent.action.MAIN" />
+               <category android:name="android.intent.category.LAUNCHER" />
+           </intent-filter>
+            -->
+        </activity>
+
+        <!-- Facebook Activity -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"
+            tools:replace="android:value" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.auth.RegisterActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- START MAIN ACTIVITY -->
+        <activity
+            android:name=".activities.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- END MAIN ACTIVITY -->
+
+
+        <!-- START TRACK WORKOUT ACTIVITY -->
+        <activity
+            android:name=".activities.tracking.TrackWorkoutActivity"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.tamu.geoinnovation.fpx.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.postworkout.ReviewWorkoutActivity"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.tamu.geoinnovation.fpx.activities.MainActivity" />
+        </activity>
+        <!-- END TRACK WORKOUT ACTIVITY -->
+
+
+        <!-- START GOALS ACTIVITY -->
+        <activity
+            android:name=".activities.goals.GoalsActivity"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.tamu.geoinnovation.fpx.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.goals.AddGoalsFormActivity"
+            android:parentActivityName=".activities.goals.GoalsActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.tamu.geoinnovation.fpx.activities.goals.GoalsActivity" />
+        </activity>
+        <activity
+            android:name=".activities.goals.AddChallengeFormActivity"
+            android:parentActivityName=".activities.goals.GoalsActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.tamu.geoinnovation.fpx.activities.goals.GoalsActivity" />
+        </activity>
+        <!-- END GOALS ACTIVITY -->
+
+
+        <!-- START PROFILE ACTIVITY -->
+        <activity
+            android:name=".activities.profile.ProfileActivity"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.tamu.geoinnovation.fpx.activities.MainActivity" />
+        </activity>
+        <!-- END PROFILE ACTIVITY -->
+
+
+        <!-- START PLANS ACTIVITY -->
+        <activity
+            android:name=".activities.plans.PlanActivity"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.tamu.geoinnovation.fpx.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.plans.PlanActivityForm"
+            android:parentActivityName=".activities.plans.PlanActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.tamu.geoinnovation.fpx.activities.plans.PlanActivity" />
+        </activity>
+        <!-- END PLANS ACTIVITY -->
+
+
+        <!-- START HISTORY ACTIVITY -->
+        <activity
+            android:name=".activities.history.HistoryActivity"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.tamu.geoinnovation.fpx.activities.MainActivity" />
+        </activity>
+        <!-- END HISTORY ACTIVITY -->
+        <activity android:name=".activities.wearables.pebble.PebbleInitializationActivity" />
+
+        <service
+            android:name=".activities.wearables.pebble.PebbleCommunication"
+            android:enabled="true"
+            android:exported="true" />
+    </application>
+
+</manifest>

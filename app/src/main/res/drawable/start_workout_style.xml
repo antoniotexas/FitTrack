@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Change color and size when pressed-->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <!--<corners android:radius="10dp" />-->
+            <!--<stroke android:width="2px" android:color="#FFFFFF"  />-->
+            <solid android:color="@color/start_workout_color" android:alpha="0.5"/>
+        </shape>
+    </item>
+
+    <!--Color of button and with radios-->
+    <item>
+        <shape android:shape="rectangle">
+            <!--<corners android:radius="10dp" />-->
+            <!--<stroke android:width="2px"  android:textColor="@color/white" />-->
+            <solid android:color="@color/start_workout_color" />
+        </shape>
+    </item>
+
+</selector>

@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Fourth Row -->
+        <LinearLayout
+            android:id="@+id/fourth_row_view"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_height="125dp"
+            android:layout_width="match_parent">
+
+            <!--Place holder for Jumping Jacks  -->
+            <LinearLayout
+                android:id="@+id/jumping_jacks_view"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:padding="20dp"
+
+                >
+                <!-- Place holder for pixel art  -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/jumping_jacks_icon" />
+                <TextView
+                    android:id="@+id/jumping_jacks_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:text="Jumping Jacks" />
+                <TextView
+                    android:id="@+id/jumping_jacks_press_reps_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textSize="12sp"
+                    android:textColor="@color/grey"
+                    android:text="50"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/border10"
+                android:layout_width="1dp"
+                android:layout_height="94dp"
+                android:layout_gravity="center"
+                android:layout_alignLeft="@+id/jumping_jacks_view"
+                android:background="#9E9E9E" />
+
+            <!--Place holder for Jump Rope -->
+            <LinearLayout
+                android:id="@+id/jumping_rope_view"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:padding="20dp"
+                >
+                <!-- Place holder for pixel art  -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/jumping_rope_icon" />
+                <TextView
+                    android:id="@+id/jump_rope_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:text="Jump Rope" />
+                <TextView
+                    android:id="@+id/jump_rope_press_reps_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textSize="12sp"
+                    android:textColor="@color/grey"
+                    android:text="50"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/border11"
+                android:layout_width="1dp"
+                android:layout_height="94dp"
+                android:layout_gravity="center"
+                android:layout_alignLeft="@+id/jump_rope_view"
+                android:background="#9E9E9E" />
+
+            <!--Place holder for Step Ups -->
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:padding="20dp"
+
+                >
+                <!-- Place holder for pixel art  -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/step_ups_icon"
+                    android:tint="@color/black"
+                    />
+                <TextView
+                    android:id="@+id/step_ups_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:text="Step ups" />
+                <TextView
+                    android:id="@+id/step_ups_press_reps_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textSize="12sp"
+                    android:textColor="@color/grey"
+                    android:text="50"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/border9"
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_alignBottom="@+id/fourth_row_view"
+            android:background="#9E9E9E" />
+
+        <!-- Fifth Row -->
+        <LinearLayout android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_height="125dp"
+            android:layout_width="match_parent">
+
+            <!--Place holder for Running -->
+            <LinearLayout
+                android:id="@+id/running_view"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:padding="20dp"
+
+                >
+                <!-- Place holder for pixel art  -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/running_icon" />
+                <TextView
+                    android:id="@+id/running_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:text="Running" />
+                <TextView
+                    android:id="@+id/running_press_reps_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textSize="12sp"
+                    android:textColor="@color/grey"
+                    android:text="50"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/border12"
+                android:layout_width="1dp"
+                android:layout_height="94dp"
+                android:layout_gravity="center"
+                android:layout_alignLeft="@+id/running_view"
+                android:background="#9E9E9E" />
+
+            <!--Place holder for Walking -->
+            <LinearLayout
+                android:id="@+id/walking_view"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:padding="20dp"
+                >
+                <!-- Place holder for pixel art  -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/walking_icon" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:text="Walking" />
+                <TextView
+                    android:id="@+id/walking_press_reps_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textSize="12sp"
+                    android:textColor="@color/grey"
+                    android:text="50"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/border13"
+                android:layout_width="1dp"
+                android:layout_height="94dp"
+                android:layout_gravity="center"
+                android:layout_alignLeft="@+id/walking_view"
+                android:background="#9E9E9E" />
+
+            <!--Place holder for Stairs -->
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:padding="20dp"
+                >
+                <!-- Place holder for pixel art  -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/stairs_icon" />
+                <TextView
+                    android:id="@+id/stairs_text_view_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:text="Stairs" />
+                <TextView
+                    android:id="@+id/stairs_press_reps_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textSize="12sp"
+                    android:textColor="@color/grey"
+                    android:text="50"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

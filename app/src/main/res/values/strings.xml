@@ -1,0 +1,124 @@
+<resources>
+
+
+    <string name="facebook_app_id">1905587366420701</string>
+    <string name="fb_login_protocol_scheme">fb1905587366420701</string>
+
+
+    <string name="app_name">FitTrack</string>
+    <string name="action_upload">Upload data</string>
+    <string name="action_settings">Sensors</string>
+    <string name="action_logout">Logout</string>
+
+    <string name="logo_for_data_collection_app">Logo for Data Collection App.</string>
+    <string name="account_not_found">Account not found</string>
+
+    <!-- Login Labels & Placeholders -->
+    <string name="login_header">Login</string>
+    <string name="login_user_name">User\'s Full Name</string>
+
+    <string name="login_height_label">Height</string>
+    <string name="login_height_placeholder">XX</string>
+    <string name="login_height_ft_label">Feet</string>
+    <string name="login_height_in_label">Inches</string>
+
+    <string name="login_weight_label">Weight</string>
+    <string name="login_weight_placeholder">XXX.XX</string>
+    <string name="login_weight_lbs_label">lbs</string>
+
+    <!-- Main Activity Labels & Placeholders -->
+    <string name="activity_spinner_text">Activity:</string>
+    <string name="app_spinner_text">Application: </string>
+
+    <string name="start_tracking">Start Tracking</string>
+    <string name="stop_tracking">Stop Tracking</string>
+
+    <!-- Login Layout Labels by jose Ramos -->
+
+    <string name="application_name">Fitness RPG</string>
+
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+
+    <string name="password">Password</string>
+
+    <string name="forgot_password">Forgot Your Password?</string>
+
+    <string name="other_sign_in">Or Sign with</string>
+
+    <string name="sign_up">Sign Up</string>
+
+    <string name="login">Login</string>
+
+    <string name="no_account">Don\'t Have an Account</string>
+
+    <string name="register_button">Register Now</string>
+
+    <string name="exercise_prompt">Choose an exercise</string>
+
+    <string-array name="possible_exercises_array">
+        <item>Bench Press</item>
+        <item>Shoulder Press</item>
+        <item>Squats</item>
+        <item>Flys</item>
+        <item>Pulldowns</item>
+
+        <item>Pushups</item>
+        <item>Curls</item>
+        <item>Situps</item>
+
+        <item>Jumping Jacks</item>
+        <item>Jump Rope</item>
+        <item>Running</item>
+    </string-array>
+
+
+    <string-array name="measurement_types">
+        <item>reps</item>
+        <item>seconds</item>
+    </string-array>
+
+
+    <string-array name="developers_array">
+        <item>Will Adams</item>
+        <item>Matt Bruns</item>
+        <item>Abnob Doss</item>
+        <item>Victor Mendiola</item>
+        <item>Jose Ramos</item>
+        <item>Kristof Willimann</item>
+    </string-array>
+    <string-array name="gps_sampling_entries">
+        <item>5 seconds</item>
+        <item>15 seconds</item>
+        <item>30 seconds</item>
+        <item>60 seconds</item>
+    </string-array>
+    <string-array name="gps_sampling_values">
+        <item>5</item>
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+    </string-array>
+    <string-array name="light_sampling_entries">
+        <item>5 seconds</item>
+        <item>15 seconds</item>
+        <item>30 seconds</item>
+        <item>60 seconds</item>
+    </string-array>
+    <string-array name="light_sampling_values">
+        <item>5</item>
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+    </string-array>
+
+
+    <string-array name="goal_type_array">
+        <item>Workouts Per Week</item>
+        <item>Specific Exercise Per Week</item>
+    </string-array>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

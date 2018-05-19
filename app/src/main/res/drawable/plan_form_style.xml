@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Change color and size when pressed-->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="5dp" />
+            <stroke android:width="2px" android:color="#E0E0E0" />
+            <solid android:color="#E0E0E0" />
+        </shape>
+    </item>
+
+    <!--Color of button and with radios-->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="5dp" />
+            <stroke android:width="2px"  android:color="#E0E0E0"  />
+            <solid android:color="#EEEEEE" />
+        </shape>
+    </item>
+
+</selector>
+
+
+

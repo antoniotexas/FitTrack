@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#740800</color>
+    <color name="colorPrimaryDark">#480905</color>
+    <color name = "view_color_grey">#a66959</color>
+    <color name="pink">#FF4081</color>
+    <color name="seafoam">#40ffbe</color>
+    <color name="orange">#ff5f40</color>
+    <color name="yellow">#ffbf40</color>
+    <color name="blue">#40e1ff</color>
+    <color name="red">#ff4052</color>
+    <color name="salmon">#ff6767</color>
+    <color name="green">#0dff5c</color>
+    <color name="transparentWhite">#d9f0f0f0</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="white_grey">#EEEEEE</color>
+    <color name = "maroon">#480905</color>
+    <color name = "grey">#7C7B7B</color>
+
+    <color name="goals_bg">#D1495B</color>
+    <color name="plan_bg">#E8B977</color>
+    <color name="profile_bg">#BAC1B8</color>
+    <color name="history_bg">#27A2AB</color>
+    <color name="start_workout_color">#EF3E36</color>
+
+    <color name="negative_ops">#f44336</color>
+    <color name="edit_ops">#00bcd4</color>
+    <color name="positive_ops">#47a44b</color>
+
+    <color name="login_color">#740800</color>
+
+    <!-- FAB Library Example -->
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="background">#e5e5e5</color>
+    <color name="half_black">#808080</color>
+    <color name="white_pressed">#f1f1f1</color>
+    <color name="pink_pressed">#ec407a</color>
+    <color name="blue_semi_transparent">#805677fc</color>
+    <color name="blue_semi_transparent_pressed">#80738ffe</color>
+    <!-- END FAB Library Example -->
+</resources>
+
